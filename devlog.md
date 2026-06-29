@@ -1,0 +1,47 @@
+# 「ゼロからのTCP/IPプロトコルスタック自作入門」学習記録
+
+https://book.mynavi.jp/ec/products/detail/id=149014
+
+## CONTENTS
+- [x] Step 0　はじめに
+- [x] Step 1　ネットワークデバイスの管理
+- [ ] Step 2　デバイスドライバ
+- [ ] Step 3　プロトコルの管理
+- [ ] Step 4　IP：パケットの入力と検証
+- [ ] Step 5　論理インタフェースの管理
+- [ ] Step 6　IP：パケットの送信
+- [ ] Step 7　IP：上位プロトコルの管理
+- [ ] Step 8　ICMP：メッセージの入力と検証
+- [ ] Step 9　ICMP：メッセージの送信
+- [ ] Step 10　Ethernet：フレームの入力
+- [ ] Step 11　Ethernet：デバイスドライバの実装
+- [ ] Step 12　ARP：メッセージの入力と応答
+- [ ] Step 13　ARP：キャッシュの実装
+- [ ] Step 14　ARP：要求メッセージの送信
+- [ ] Step 15　受信パケットの遅延処理
+- [ ] Step 16　IP：ルーティング機能の追加
+- [ ] Step 17　UDP：データグラムの入力と検証
+- [ ] Step 18　UDP：制御ブロックとユーザコマンド
+- [ ] Step 19　UDP：データの送受信
+- [ ] Step 20　TCP：セグメントの入力
+- [ ] Step 21　TCP：制御ブロック
+- [ ] Step 22　TCP：コネクション確立（その1）
+- [ ] Step 23　TCP：データ転送
+- [ ] Step 24　TCP：セグメントの再送
+- [ ] Step 25　TCP：コネクション確立（その2）
+- [ ] Step 26　TCP：コネクション切断（その1）
+- [ ] Step 27　TCP：コネクション切断（その2）
+- [ ] Step 28　TCP：落ち穂拾い
+- [ ] Step 29　TCP：ソケット互換のユーザコマンド
+- [ ] Step 30　ソケットAPI
+
+## 2026-06-16
+- step-0 完了（30分）
+
+## 2026-06-29
+- 本が届いたので読み始めた
+- テストの実行： `CFLAGS="-DHEXDUMP" make && ./test/test.exe`
+- データリンク：同じ通信媒体に直接接続されたノード間で通信するための仕組み
+- 複数のネットワークデバイスを同時に扱う必要がある
+- dev.mtu: maximum transmission unit 一度に送信できるデータの最大サイズ
+- step-1 完了（50分）
