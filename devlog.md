@@ -5,7 +5,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 ## CONTENTS
 - [x] Step 0　はじめに
 - [x] Step 1　ネットワークデバイスの管理
-- [ ] Step 2　デバイスドライバ
+- [x] Step 2　デバイスドライバ
 - [ ] Step 3　プロトコルの管理
 - [ ] Step 4　IP：パケットの入力と検証
 - [ ] Step 5　論理インタフェースの管理
@@ -45,3 +45,9 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - 複数のネットワークデバイスを同時に扱う必要がある
 - dev.mtu: maximum transmission unit 一度に送信できるデータの最大サイズ
 - step-1 完了（50分）
+
+## 2026-06-30
+- デバイスドライバ：デバイスと共通インターフェイスの間に挟まる抽象化レイヤ
+- step-2 完了（30分）
+    - 仮想的なループバックデバイスを実装した
+    - データを送信するときに同じデータを`net_input()`に渡すことで入力を行う
