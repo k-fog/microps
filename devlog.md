@@ -10,7 +10,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 4　IP：パケットの入力と検証
 - [x] Step 5　論理インタフェースの管理
 - [x] Step 6　IP：パケットの送信
-- [ ] Step 7　IP：上位プロトコルの管理
+- [x] Step 7　IP：上位プロトコルの管理
 - [ ] Step 8　ICMP：メッセージの入力と検証
 - [ ] Step 9　ICMP：メッセージの送信
 - [ ] Step 10　Ethernet：フレームの入力
@@ -130,3 +130,9 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - メモリに書き戻すときにバイトが入れ替わる→正しいネットワークバイトオーダーの値がメモリ上のバイト列として得られる
 - step-6 完了（60分）
     - 同じデータリンク上に存在する直接通信できるノードへの送信処理
+
+## 2026-06-06
+- ICMP（Internet Control Message Protocol）
+    - エラー通知や制御情報を伝えるためのプロトコル
+    - ping
+- step-7 完了（20分）
