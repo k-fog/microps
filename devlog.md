@@ -11,7 +11,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 5　論理インタフェースの管理
 - [x] Step 6　IP：パケットの送信
 - [x] Step 7　IP：上位プロトコルの管理
-- [ ] Step 8　ICMP：メッセージの入力と検証
+- [x] Step 8　ICMP：メッセージの入力と検証
 - [ ] Step 9　ICMP：メッセージの送信
 - [ ] Step 10　Ethernet：フレームの入力
 - [ ] Step 11　Ethernet：デバイスドライバの実装
@@ -136,3 +136,12 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - エラー通知や制御情報を伝えるためのプロトコル
     - ping
 - step-7 完了（20分）
+
+## 2026-06-07
+- ICMP（Internet Control Message Protocol）
+    - IPと同様にインターネット層のプロトコル
+    - メッセージ
+        - エラー
+        - 照会
+    - RFC 792
+- step-8 完了（25分）
