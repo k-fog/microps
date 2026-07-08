@@ -117,7 +117,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - ユニキャストIPアドレス：上記以外のアドレス。ネットワーク上の特定の1台のホストだけを指す
 - step-5 完了（65分）
 
-## 2026-06-05
+## 2026-07-05
 - IPパケットの構造：\[IPヘッダ\]\[上位プロトコルのデータ\]
 - チェックサムのバイトオーダーを変換しなくていいのはなぜ？
     - Byte Order Independence
@@ -131,13 +131,13 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - step-6 完了（60分）
     - 同じデータリンク上に存在する直接通信できるノードへの送信処理
 
-## 2026-06-06
+## 2026-07-06
 - ICMP（Internet Control Message Protocol）
     - エラー通知や制御情報を伝えるためのプロトコル
     - ping
 - step-7 完了（20分）
 
-## 2026-06-07
+## 2026-07-07
 - ICMP（Internet Control Message Protocol）
     - IPと同様にインターネット層のプロトコル
     - メッセージ
