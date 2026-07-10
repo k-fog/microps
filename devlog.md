@@ -145,3 +145,9 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - 照会
     - RFC 792
 - step-8 完了（25分）
+
+## 2026-07-10
+- Destination Unreachableメッセージでは、「IPヘッダ+ペイロードの先頭8バイト」をデータ部分にコピーして送り返す
+- step-9 完了（30分）
+    - ICMPメッセージの送信
+    - Destination Unreachableメッセージ送信時、ペイロードが8バイトに満たない場合の処理は簡略化
