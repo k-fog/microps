@@ -12,8 +12,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 6　IP：パケットの送信
 - [x] Step 7　IP：上位プロトコルの管理
 - [x] Step 8　ICMP：メッセージの入力と検証
-- [ ] Step 9　ICMP：メッセージの送信
-- [ ] Step 10　Ethernet：フレームの入力
+- [x] Step 9　ICMP：メッセージの送信
+- [x] Step 10　Ethernet：フレームの入力
 - [ ] Step 11　Ethernet：デバイスドライバの実装
 - [ ] Step 12　ARP：メッセージの入力と応答
 - [ ] Step 13　ARP：キャッシュの実装
@@ -151,3 +151,28 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - step-9 完了（30分）
     - ICMPメッセージの送信
     - Destination Unreachableメッセージ送信時、ペイロードが8バイトに満たない場合の処理は簡略化
+
+## 2026-07-13
+- Ethernet
+    - TCP/IPのために作られたものではない
+    - ネットワークインターフェース層
+    - バス型通信：すべてのノードが単一のバスを介して接続される
+    - デバイス固有のMACアドレスによってノードを識別
+- MACアドレス
+    - 48bit
+    - OUI（ベンダーID） 24bit
+    - 製品固有ID 24bit
+- Ethernetフレーム
+    - （プリアンブル）
+    - ヘッダ
+    - ペイロード
+        - 最大1500バイト
+        - 最小46バイト
+            - CSMA/CDの信号衝突検出の都合
+    - （トレーラ）
+- TAPデバイス
+    - 仮想Ethernetデバイス
+    - OSからはEthernetデバイスとして認識される
+    - アプリケーションから自由に読み書きできる
+    - `ip addr show dev tap0`
+- step-10 完了（45分）
