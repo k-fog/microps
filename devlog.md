@@ -14,7 +14,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 8　ICMP：メッセージの入力と検証
 - [x] Step 9　ICMP：メッセージの送信
 - [x] Step 10　Ethernet：フレームの入力
-- [ ] Step 11　Ethernet：デバイスドライバの実装
+- [x] Step 11　Ethernet：デバイスドライバの実装
 - [ ] Step 12　ARP：メッセージの入力と応答
 - [ ] Step 13　ARP：キャッシュの実装
 - [ ] Step 14　ARP：要求メッセージの送信
@@ -176,3 +176,15 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - アプリケーションから自由に読み書きできる
     - `ip addr show dev tap0`
 - step-10 完了（45分）
+
+## 2026-07-15
+- Linuxのあまり使ったことの無いシステムコールが多く登場した
+    - fdに書き込むだけではだめらしい
+    - `ioctl`
+    - `fcntl`
+- step-11 完了（120分）
+    - パケットの到着時に割り込みを発生させる
+        - シグナル
+        - TODO: Appendix 1 を読む
+    - 割り込みハンドラでパケットを読み出し
+    - プロトコルスタックにデータが渡る
