@@ -15,7 +15,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 9　ICMP：メッセージの送信
 - [x] Step 10　Ethernet：フレームの入力
 - [x] Step 11　Ethernet：デバイスドライバの実装
-- [ ] Step 12　ARP：メッセージの入力と応答
+- [x] Step 12　ARP：メッセージの入力と応答
 - [ ] Step 13　ARP：キャッシュの実装
 - [ ] Step 14　ARP：要求メッセージの送信
 - [ ] Step 15　受信パケットの遅延処理
@@ -188,3 +188,14 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - TODO: Appendix 1 を読む
     - 割り込みハンドラでパケットを読み出し
     - プロトコルスタックにデータが渡る
+
+## 2026-07-17
+- ARP: Address Resolution Protocol
+    - TCP/IPはノードをIPアドレスによって識別
+    - EthernetはMACアドレスを用いる
+    - → 宛先のIPアドレスを持つノードのMACアドレスが必ず必要 
+    - 流れ
+        - 送信者がブロードキャスト
+        - IPアドレスが一致しているノードが返事
+        - 送信者は送り先のMACアドレスを知る
+- step-12 完了（60分）
