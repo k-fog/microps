@@ -16,7 +16,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 10　Ethernet：フレームの入力
 - [x] Step 11　Ethernet：デバイスドライバの実装
 - [x] Step 12　ARP：メッセージの入力と応答
-- [ ] Step 13　ARP：キャッシュの実装
+- [x] Step 13　ARP：キャッシュの実装
 - [ ] Step 14　ARP：要求メッセージの送信
 - [ ] Step 15　受信パケットの遅延処理
 - [ ] Step 16　IP：ルーティング機能の追加
@@ -199,3 +199,9 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - IPアドレスが一致しているノードが返事
         - 送信者は送り先のMACアドレスを知る
 - step-12 完了（60分）
+
+## 2026-07-19
+- step-13 完了（40分）
+    - 解決済みアドレスのキャッシュ
+    - キャッシュの自動削除
+- pingできた！
