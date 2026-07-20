@@ -17,7 +17,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 11　Ethernet：デバイスドライバの実装
 - [x] Step 12　ARP：メッセージの入力と応答
 - [x] Step 13　ARP：キャッシュの実装
-- [ ] Step 14　ARP：要求メッセージの送信
+- [x] Step 14　ARP：要求メッセージの送信
 - [ ] Step 15　受信パケットの遅延処理
 - [ ] Step 16　IP：ルーティング機能の追加
 - [ ] Step 17　UDP：データグラムの入力と検証
@@ -205,3 +205,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - 解決済みアドレスのキャッシュ
     - キャッシュの自動削除
 - pingできた！
+
+## 2026-07-20
+- step-14 完了（25分）
+    - ARP要求による能動的なアドレス解決
