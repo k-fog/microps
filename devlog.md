@@ -20,7 +20,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 14　ARP：要求メッセージの送信
 - [x] Step 15　受信パケットの遅延処理
 - [x] Step 16　IP：ルーティング機能の追加
-- [ ] Step 17　UDP：データグラムの入力と検証
+- [x] Step 17　UDP：データグラムの入力と検証
 - [ ] Step 18　UDP：制御ブロックとユーザコマンド
 - [ ] Step 19　UDP：データの送受信
 - [ ] Step 20　TCP：セグメントの入力
@@ -229,3 +229,22 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 % sudo iptables -A FORWARD -i tap0 -j ACCEPT
 % sudo iptables -t nat -A POSTROUTING -s 192.0.2.0/24 -o DEVICE -j MASQUERADE
 ```
+
+- トランスポート層
+    - エンドポイント間の通信＝ノード上のアプリ間の通信
+    - ノード上で稼働するアプリケーションは1つとは限らない→ポート番号で識別（∽ インターネット層のIPアドレス）
+    - UDP
+        - シンプル
+        - コネクションレス
+        - [RFC768](https://datatracker.ietf.org/doc/html/rfc768)
+        - チェックサムはデータグラム全体をカバー（省略可能）
+            - チェックサムを省略したときは0に設定
+            - チェックサム自体が0のときは、0xFFFF（1の補数で-0）に置き換え
+            - 擬似ヘッダによって宛先の誤りを検証
+            - NATではUDPのチェックサムを再計算する必要がある
+    - TCP
+        - 信頼性のないIP上での信頼性を担保
+        - 到達確認
+        - 再送
+- step-17 完了（40分）
+    - UDPの受信
