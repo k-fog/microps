@@ -21,7 +21,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 15　受信パケットの遅延処理
 - [x] Step 16　IP：ルーティング機能の追加
 - [x] Step 17　UDP：データグラムの入力と検証
-- [ ] Step 18　UDP：制御ブロックとユーザコマンド
+- [x] Step 18　UDP：制御ブロックとユーザコマンド
 - [ ] Step 19　UDP：データの送受信
 - [ ] Step 20　TCP：セグメントの入力
 - [ ] Step 21　TCP：制御ブロック
@@ -248,4 +248,5 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - 再送
 - step-17 完了（40分）
     - UDPの受信
-- step-18 完了（分）
+- step-18 完了（30分）
+    - 制御ブロック
