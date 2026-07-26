@@ -18,8 +18,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 12　ARP：メッセージの入力と応答
 - [x] Step 13　ARP：キャッシュの実装
 - [x] Step 14　ARP：要求メッセージの送信
-- [ ] Step 15　受信パケットの遅延処理
-- [ ] Step 16　IP：ルーティング機能の追加
+- [x] Step 15　受信パケットの遅延処理
+- [x] Step 16　IP：ルーティング機能の追加
 - [ ] Step 17　UDP：データグラムの入力と検証
 - [ ] Step 18　UDP：制御ブロックとユーザコマンド
 - [ ] Step 19　UDP：データの送受信
@@ -214,3 +214,18 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - step-15 完了（40分）
     - 割り込みハンドラに時間を掛けてしまうと、後続のフレームを取りこぼす可能性がある
     - パケット処理の非同期化：受信キュー→ソフトウェア割り込み
+- step-16 完了（60分）
+    - IPルーティング
+        - 宛先を見て次にどこへ渡すかを決める（次＝ネクストホップ）
+        - ルーティングテーブル
+            - 通常Radix Tree （基数木）で扱われる
+            - ここでは簡略化して単純な連結リストとする
+        - 経路情報の登録
+        - IPパケット送信時の経路選択
+
+```bash
+% sudo bash -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+% sudo iptables -A FORWARD -o tap0 -j ACCEPT
+% sudo iptables -A FORWARD -i tap0 -j ACCEPT
+% sudo iptables -t nat -A POSTROUTING -s 192.0.2.0/24 -o DEVICE -j MASQUERADE
+```
