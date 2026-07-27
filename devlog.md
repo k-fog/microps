@@ -22,7 +22,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 16　IP：ルーティング機能の追加
 - [x] Step 17　UDP：データグラムの入力と検証
 - [x] Step 18　UDP：制御ブロックとユーザコマンド
-- [ ] Step 19　UDP：データの送受信
+- [x] Step 19　UDP：データの送受信
 - [ ] Step 20　TCP：セグメントの入力
 - [ ] Step 21　TCP：制御ブロック
 - [ ] Step 22　TCP：コネクション確立（その1）
@@ -250,3 +250,6 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - UDPの受信
 - step-18 完了（30分）
     - 制御ブロック
+
+## 2026-07-27
+- step-19 完了（55分）
