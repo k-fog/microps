@@ -3,15 +3,10 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "arp.h"
-#include "intr.h"
-#include "ip.h"
-#include "icmp.h"
 #include "platform.h"
 
 #include "util.h"
 #include "net.h"
-#include "ip.h"
 
 struct net_protocol {
     struct net_protocol *next;
@@ -272,6 +267,7 @@ net_softirq_handler(unsigned int irq, void *arg)
 #include "ip.h"
 #include "icmp.h"
 #include "udp.h"
+#include "tcp.h"
 
 int
 net_init(void)
@@ -295,6 +291,10 @@ net_init(void)
     }
     if (udp_init() == -1) {
         errorf("udp_init() failure");
+        return -1;
+    }
+    if (tcp_init() == -1) {
+        errorf("tcp_init() failure");
         return -1;
     }
     infof("success");
