@@ -24,7 +24,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 18　UDP：制御ブロックとユーザコマンド
 - [x] Step 19　UDP：データの送受信
 - [x] Step 20　TCP：セグメントの入力
-- [ ] Step 21　TCP：制御ブロック
+- [x] Step 21　TCP：制御ブロック
 - [ ] Step 22　TCP：コネクション確立（その1）
 - [ ] Step 23　TCP：データ転送
 - [ ] Step 24　TCP：セグメントの再送
@@ -272,4 +272,9 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - フロー制御
     - 再送制御
 - step-20 完了（35分）
-
+- 状態管理
+    - ![tcp_state](https://upload.wikimedia.org/wikipedia/en/5/57/Tcp_state_diagram.png)
+    - シーケンス変数により送受信状況を管理
+        - SND
+        - RCV
+- step-21 完了（60分）
