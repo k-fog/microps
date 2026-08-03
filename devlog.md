@@ -25,7 +25,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 19　UDP：データの送受信
 - [x] Step 20　TCP：セグメントの入力
 - [x] Step 21　TCP：制御ブロック
-- [ ] Step 22　TCP：コネクション確立（その1）
+- [x] Step 22　TCP：コネクション確立（その1）
 - [ ] Step 23　TCP：データ転送
 - [ ] Step 24　TCP：セグメントの再送
 - [ ] Step 25　TCP：コネクション確立（その2）
@@ -278,3 +278,11 @@ https://book.mynavi.jp/ec/products/detail/id=149014
         - SND
         - RCV
 - step-21 完了（60分）
+
+## 2026-08-03
+- コネクション確率
+    - アクティブオープン
+    - パッシブオープン
+- step-22 完了（45分）
+    - パッシブオープン
+    - 強制的にコネクションを切断するCLOSEコマンド
