@@ -27,7 +27,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 21　TCP：制御ブロック
 - [x] Step 22　TCP：コネクション確立（その1）
 - [x] Step 23　TCP：データ転送
-- [ ] Step 24　TCP：セグメントの再送
+- [x] Step 24　TCP：セグメントの再送
 - [ ] Step 25　TCP：コネクション確立（その2）
 - [ ] Step 26　TCP：コネクション切断（その1）
 - [ ] Step 27　TCP：コネクション切断（その2）
@@ -293,10 +293,12 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 ---
 送信側 (snd)
 
+```
        snd.una       snd.nxt         snd.una + snd.wnd
           |             |                    |
  ---------+=============+--------------------+---------->
    ACK済  | 送信済未ACK |  まだ送れる(cap)   | 送れない
+```
 
 - snd.una … 未確認応答の最古のシーケンス番号（ここまでは相手が受け取った）
 - snd.nxt … 次に送るシーケンス番号
@@ -308,3 +310,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - rcv.nxt … 次に受け取るべきシーケンス番号（＝これまでの ACK 値）
 - rcv.wnd … 自分のバッファ空き。これを相手に広告する
 ---
+
+## 2026-08-05
+- step-24 完了（30分）
+    - 再送制御
