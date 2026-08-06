@@ -320,4 +320,6 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 ## 2026-08-06
 - step-26 完了（25分）
     - パッシブクローズ
+- step-27 完了（25分）
+    - アクティブクローズ
 
