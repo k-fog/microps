@@ -29,7 +29,7 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 23　TCP：データ転送
 - [x] Step 24　TCP：セグメントの再送
 - [x] Step 25　TCP：コネクション確立（その2）
-- [ ] Step 26　TCP：コネクション切断（その1）
+- [x] Step 26　TCP：コネクション切断（その1）
 - [ ] Step 27　TCP：コネクション切断（その2）
 - [ ] Step 28　TCP：落ち穂拾い
 - [ ] Step 29　TCP：ソケット互換のユーザコマンド
@@ -316,3 +316,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - 再送制御
 - step-25 完了（30分）
     - アクティブオープン
+
+## 2026-08-06
+- step-26 完了（25分）
+    - パッシブクローズ
+
