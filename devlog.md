@@ -328,4 +328,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - 同時オープン・同時クローズ
     - RSTを受信したら強制切断
     - SYNフラグはコネクション確率のための最初のセグメントにだけ設定される
+- ソケット互換のコマンド
+    - アクティブオープン→`connect`
+    - パッシブオープン→`listen, accept`
+- step-29 完了（70分）
 
