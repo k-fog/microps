@@ -30,8 +30,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 24　TCP：セグメントの再送
 - [x] Step 25　TCP：コネクション確立（その2）
 - [x] Step 26　TCP：コネクション切断（その1）
-- [ ] Step 27　TCP：コネクション切断（その2）
-- [ ] Step 28　TCP：落ち穂拾い
+- [x] Step 27　TCP：コネクション切断（その2）
+- [x] Step 28　TCP：落ち穂拾い
 - [ ] Step 29　TCP：ソケット互換のユーザコマンド
 - [ ] Step 30　ソケットAPI
 
@@ -322,4 +322,10 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - パッシブクローズ
 - step-27 完了（25分）
     - アクティブクローズ
+
+## 2026-08-08
+- step-28 完了（30分）
+    - 同時オープン・同時クローズ
+    - RSTを受信したら強制切断
+    - SYNフラグはコネクション確率のための最初のセグメントにだけ設定される
 
