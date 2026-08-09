@@ -32,8 +32,8 @@ https://book.mynavi.jp/ec/products/detail/id=149014
 - [x] Step 26　TCP：コネクション切断（その1）
 - [x] Step 27　TCP：コネクション切断（その2）
 - [x] Step 28　TCP：落ち穂拾い
-- [ ] Step 29　TCP：ソケット互換のユーザコマンド
-- [ ] Step 30　ソケットAPI
+- [x] Step 29　TCP：ソケット互換のユーザコマンド
+- [x] Step 30　ソケットAPI
 
 ## 2026-06-16
 - step-0 完了（30分）
@@ -333,3 +333,6 @@ https://book.mynavi.jp/ec/products/detail/id=149014
     - パッシブオープン→`listen, accept`
 - step-29 完了（70分）
 
+## 2026-08-09
+- ソケット：OSが提供するネットワーク機能をアプリケーションプロセスが利用するためのAPI
+- step-30 完了（60分）
